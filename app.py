@@ -143,5 +143,5 @@ def handle_new_comment(data):
     emit('comment_added', {'author': author, 'comment': comment, 'image_base64': comment_image_base64}, broadcast=True)
 
 if __name__ == '__main__':
-    socketio.run(app, host='0.0.0.0', port=5000, debug=True)
+    socketio.run(app, host='0.0.0.0', port=5050, debug=True)
 
